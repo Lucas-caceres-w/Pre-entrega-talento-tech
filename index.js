@@ -1,12 +1,14 @@
 let products = [];
 let cart = JSON.parse(window.localStorage.getItem('cart')) || [];
 
-
 const getProducts = async () => {
    try {
-      const res = await fetch('https://lucas-caceres-w.github.io/Pre-entrega-talento-tech/db.json');
+      const res = await fetch(
+         'https://lucas-caceres-w.github.io/Pre-entrega-talento-tech/db.json'
+      );
       const json = await res.json();
       products = json.productos;
+      console.log('Mis productos:', json.productos);
    } catch (error) {
       console.error('Error al obtener los productos:', error);
    }
@@ -21,10 +23,10 @@ const addProduct = (id) => {
       existingProduct.quantity += 1;
    } else {
       swal({
-         title: "Exito",
-         text: "Producto agregado al carrito",
-         icon: "success",
-      })
+         title: 'Exito',
+         text: 'Producto agregado al carrito',
+         icon: 'success',
+      });
       cart.push({ ...product, quantity: 1 });
    }
 
@@ -42,6 +44,7 @@ const removeProduct = (id) => {
          cart.splice(productIndex, 1);
       }
    }
+   console.log('Producto eliminado:' + cart);
 
    updateCart();
    displayCart();
@@ -146,10 +149,10 @@ const FormCheck = () => {
 
    if (!allFieldsFilled) {
       swal({
-         title: "Error",
-         text: "Faltan campos que llenar",
-         icon: "error",
-      })
+         title: 'Error',
+         text: 'Faltan campos que llenar',
+         icon: 'error',
+      });
    } else {
       form.action = 'https://formspree.io/f/xqakpjkv';
       form.submit();
