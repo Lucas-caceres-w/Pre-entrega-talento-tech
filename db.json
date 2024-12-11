@@ -1,0 +1,88 @@
+{
+   "productos": [
+      {
+         "id": 1,
+         "title": "Remera PR",
+         "price": 35000,
+         "image": "./public/img-1.png",
+         "categoria": "men"
+      },
+      {
+         "id": 2,
+         "title": "Remera ALMAFUERTE",
+         "price": 32000,
+         "image": "./public/img-2.png",
+         "categoria": "men"
+      },
+      {
+         "id": 3,
+         "title": "Remera MEGADETH",
+         "price": 26000,
+         "image": "./public/img-3.png",
+         "categoria": "men"
+      },
+      {
+         "id": 4,
+         "title": "Remera Dibujo",
+         "price": 36000,
+         "image": "./public/img-4.png",
+         "categoria": "men"
+      },
+      {
+         "id": 5,
+         "title": "Remera Negra Dibujo",
+         "price": 25000,
+         "image": "./public/image-5.png",
+         "categoria": "women"
+      },
+      {
+         "id": 6,
+         "title": "Remera Marron frase",
+         "price": 27000,
+         "image": "./public/imagen-6.webp",
+         "categoria": "women"
+      },
+      {
+         "id": 7,
+         "title": "Remera Negra Avion",
+         "price": 28000,
+         "image": "./public/imagen-7.png",
+         "categoria": "women"
+      },
+      {
+         "id": 8,
+         "title": "Remera Marilyn",
+         "price": 30000,
+         "image": "./public/imagen-8.png",
+         "categoria": "women"
+      },
+      {
+         "id": 9,
+         "title": "Remera Simpsons",
+         "price": 20000,
+         "image": "./public/imagen-9.webp",
+         "categoria": "kids"
+      },
+      {
+         "id": 10,
+         "title": "Remera Shoe",
+         "price": 22000,
+         "image": "./public/imagen-10.png",
+         "categoria": "kids"
+      },
+      {
+         "id": 11,
+         "title": "Remera SmeakerBeast",
+         "price": 28000,
+         "image": "./public/imagen-11.png",
+         "categoria": "kids"
+      },
+      {
+         "id": 12,
+         "title": "Remera Bart",
+         "price": 26000,
+         "image": "./public/imagen-12.webp",
+         "categoria": "kids"
+      }
+   ]
+}

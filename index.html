@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Tienda online</title>
+      <title>MarEmma Shop</title>
       <link rel="stylesheet" href="./style.css" />
       <link
          rel="shortcut icon"
@@ -22,61 +22,54 @@
    </head>
    <body>
       <nav class="navbar navbar-expand-lg bg-body-tertiary static_nav">
-         <div class="container-md">
+         <div class="container-md menu">
             <a class="navbar-brand" href="/"
                ><img class="logo" src="./public/isotipo.png"
             /></a>
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNavDropdown"
-               aria-controls="navbarNavDropdown"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-               <ul class="navbar-nav">
-                  <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#">
-                        <span class="material-symbols-outlined">home</span>
-                        <p>Home</p></a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">
-                        <span class="material-symbols-outlined">favorite</span>
-                        <p>Productos</p></a
-                     >
-                  </li>
-                  <li class="nav-item dropdown">
-                     <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                     >
-                        Categorias
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li>
-                           <a class="dropdown-item" href="#mens">Hombres</a>
-                        </li>
-                        <li>
-                           <a class="dropdown-item" href="#womens">Mujeres</a>
-                        </li>
-                        <li>
-                           <a class="dropdown-item" href="#kids">Niños</a>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-            </div>
+            <ul class="nav_links">
+               <li class="links">
+                  <a class="" href="#">
+                     <span class="material-symbols-outlined">favorite</span>
+                     <p>Productos</p></a
+                  >
+               </li>
+               <li class="links">
+                  <a class="category"
+                     ><span class="material-symbols-outlined">
+                        arrow_drop_down
+                     </span>
+                     Categorias
+                  </a>
+                  <ul class="hide">
+                     <li>
+                        <a class="links_two" href="#mens">Hombres</a>
+                     </li>
+                     <li>
+                        <a class="links_two" href="#womens">Mujeres</a>
+                     </li>
+                     <li>
+                        <a class="links_two" href="#kids">Niños</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="links link_cart">
+                  <a class="cart" href="#">
+                     <span class="material-symbols-outlined">
+                        shopping_cart
+                     </span>
+                     <span class="quantity">0</span>
+                  </a>
+               </li>
+            </ul>
          </div>
       </nav>
+      <aside class="aside_cart">
+         <span class="close_cart"
+            ><span class="material-symbols-outlined"> close </span></span
+         >
+         <section id="cart" class="mt-5"></section>
+         <button class="btn btn-primary m-2">Comprar</button>
+      </aside>
       <header>
          <div
             id="carouselExample"
@@ -136,128 +129,86 @@
          <h2 id="womens" class="categoria text-center my-2">
             COLECCIÓN MUJERES
          </h2>
-         <section class="container-md container_products">
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/image-5.png" alt="remera" />
-               <p class="m-0">Remera PR</p>
-               <p class="m-0 fw-bolder">$ 30.600</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-6.webp" alt="remera" />
-               <p class="m-0">Remera ALMAFUERTE</p>
-               <p class="m-0 fw-bolder">$ 34.200</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-7.png" alt="remera" />
-               <p class="m-0">Remera MEGADETH</p>
-               <p class="m-0 fw-bolder">$ 28.800</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-8.png" alt="remera" />
-               <p class="m-0">Remera LG</p>
-               <p class="m-0 fw-bolder">$ 31.500</p>
-            </div>
-         </section>
+         <section
+            id="container_women"
+            class="container-md container_products"
+         ></section>
          <h2 id="mens" class="categoria text-center my-2">COLECCIÓN HOMBRES</h2>
-         <section class="container-md container_products">
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/img-1.png" alt="remera" />
-               <p class="m-0">Remera PR</p>
-               <p class="m-0 fw-bolder">$ 30.600</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/img-2.png" alt="remera" />
-               <p class="m-0">Remera ALMAFUERTE</p>
-               <p class="m-0 fw-bolder">$ 34.200</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/img-3.png" alt="remera" />
-               <p class="m-0">Remera MEGADETH</p>
-               <p class="m-0 fw-bolder">$ 28.800</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/img-4.png" alt="remera" />
-               <p class="m-0">Remera LG</p>
-               <p class="m-0 fw-bolder">$ 31.500</p>
-            </div>
-         </section>
+         <section
+            id="container_men"
+            class="container-md container_products"
+         ></section>
          <h2 id="kids" class="categoria text-center my-2">COLECCIÓN NIÑOS</h2>
-         <section class="container-md container_products">
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-9.webp" alt="remera" />
-               <p class="m-0">Remera PR</p>
-               <p class="m-0 fw-bolder">$ 30.600</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-10.png" alt="remera" />
-               <p class="m-0">Remera ALMAFUERTE</p>
-               <p class="m-0 fw-bolder">$ 34.200</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-11.png" alt="remera" />
-               <p class="m-0">Remera MEGADETH</p>
-               <p class="m-0 fw-bolder">$ 28.800</p>
-            </div>
-            <div class="card_product">
-               <div class="add">
-                  <button class="btn_add">Agregar al carro</button>
-               </div>
-               <img src="./public/imagen-12.webp" alt="remera" />
-               <p class="m-0">Remera LG</p>
-               <p class="m-0 fw-bolder">$ 31.500</p>
-            </div>
-         </section>
+         <section
+            id="container_kid"
+            class="container-md container_products"
+         ></section>
       </main>
+      <h2 class="categoria text-center my-2">RESEÑAS</h2>
+      <div class="container-md reviews">
+         <div class="review">
+            <p class="review-name">Juan Pérez</p>
+            <p class="review-date">01-12-2024</p>
+            <p class="review-message">
+               La calidad de las camisetas es excelente, se sienten cómodas y el
+               diseño es justo como esperaba. ¡Muy recomendable!
+            </p>
+         </div>
+         <div class="review">
+            <p class="review-name">María López</p>
+            <p class="review-date">25-11-2024</p>
+            <p class="review-message">
+               Los jeans que compré son perfectos. Tienen un ajuste ideal y el
+               material es muy resistente. Sin duda volveré a comprar.
+            </p>
+         </div>
+         <div class="review">
+            <p class="review-name">Carlos García</p>
+            <p class="review-date">20-11-2024</p>
+            <p class="review-message">
+               Pedí un abrigo y llegó en perfectas condiciones. La tela es
+               cálida y ligera, ideal para el invierno. Muy satisfecho con la
+               compra.
+            </p>
+         </div>
+         <div class="review">
+            <p class="review-name">Ana Torres</p>
+            <p class="review-date">15-11-2024</p>
+            <p class="review-message">
+               Me encantaron los vestidos, tienen un diseño único y quedan muy
+               bien. Además, el envío fue rápido.
+            </p>
+         </div>
+         <div class="review">
+            <p class="review-name">Luis Martínez</p>
+            <p class="review-date">10-11-2024</p>
+            <p class="review-message">
+               Compré unas zapatillas y están geniales. Son muy cómodas para
+               caminar todo el día. Totalmente recomendadas.
+            </p>
+         </div>
+         <div class="review">
+            <p class="review-name">Sofía Fernández</p>
+            <p class="review-date">05-11-2024</p>
+            <p class="review-message">
+               Los accesorios que pedí son increíbles. Se ven elegantes y
+               combinan con todo. El empaque también fue un detalle muy lindo.
+            </p>
+         </div>
+      </div>
       <section class="container-md">
-         <form
-            action="https://formspree.io/f/xqakpjkv"
-            method="post"
-            class="form_input"
-         >
+         <form method="post" class="form_input">
             <h4>Envia tu consulta!</h4>
             <div class="cols_input">
                <input
-                  class="input_text"
+                  class="input_text inputs_form"
                   name="nombre"
                   type="text"
                   placeholder="Nombre"
                   required
                />
                <input
-                  class="input_text"
+                  class="input_text inputs_form"
                   name="email"
                   type="email"
                   placeholder="Email"
@@ -265,14 +216,14 @@
                />
             </div>
             <textarea
-               class="msg_input"
+               class="msg_input inputs_form"
                name="message"
                placeholder="Mensaje"
                required
                id=""
                rows="5"
             ></textarea>
-            <input class="btn_prim" type="submit" value="Enviar" />
+            <input class="btn_prim submit_btn" type="submit" value="Enviar" />
          </form>
       </section>
       <footer class="footer_style">
@@ -313,5 +264,6 @@
          </div>
       </footer>
    </body>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <script src="./index.js"></script>
 </html>
