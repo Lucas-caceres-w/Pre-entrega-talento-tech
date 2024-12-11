@@ -4,7 +4,7 @@ let cart = JSON.parse(window.localStorage.getItem('cart')) || [];
 
 const getProducts = async () => {
    try {
-      const res = await fetch('https://lucas-caceres-w.github.io/Pre-entrega-talento-tech/db.json');
+      const res = await fetch('https://raw.githubusercontent.com/Lucas-caceres-w/Pre-entrega-talento-tech/refs/heads/entrega-final/db.json');
       const json = await res.json();
       products = json;
    } catch (error) {
